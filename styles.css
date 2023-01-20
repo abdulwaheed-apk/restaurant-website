@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+:root {
+    --bg-dark: #070707;
+    --bg-primary: #12130d;
+    --text-primary: #ffffff;
+    --text-secondary: #bf9444;
+    --primary-font: 'Jost', sans-serif;
+    --secondary-font: 'Cormorant Garamond', serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.topbar {
+    min-height: 50px;
+    align-items: center;
+}
+
+.topbar a {
+    color: var(--text-primary);
+}
+
+.topbar a:hover {
+    color: var(--text-secondary);
+}
+
+.topbar a i {
+    padding-right: 0.25rem;
+    color: var(--text-secondary);
+}
+
+.hr {
+    height: 0.08px;
+    background-color: var(--text-secondary);
+}
+
+nav ul {
+    /* display: flex; */
+    list-style: none;
+}
+
+nav ul li {
+    padding: .5rem 1rem;
+}
+
+nav ul li a {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+nav ul li a:hover {
+    color: var(--text-secondary);
+}
+
+
+
+.submenu {
+    display: none;
+}
+
+.home-link:hover {
+    color: var(--text-secondary);
+}
+
+.home-link a {
+    position: relative;
+}
+
+.home-link a:hover .submenu {
+    display: block;
+    position: absolute;
+    left: -35px;
+    width: 128px;
+    background-color: #0b0f14;
+    border: 2px solid #0b0f14;
+    border-radius: 8px;
+}
+
+.custom-btn {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    padding-inline: 1rem;
+    text-transform: capitalize;
+}
+
+/* Hero */
+main {
+    background-image: url('./assets/banner-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-left-img {
+    background-image: url('./assets/union-left.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    /* padding: 50px; */
+    position: relative;
+}
+
+.banner-content {
+    padding: 10rem 0;
+}
+
+.banner-content h4 {
+    color: var(--text-secondary);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.55rem;
+    text-transform: capitalize;
+}
+
+.banner-content h1 {
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: 700;
+    max-width: 75%;
+    margin: auto;
+}
+
+.banner-content p {
+    font-family: var(--primary-font);
+    font-size: 1.125rem;
+    line-height: 1.68rem;
+    font-weight: 400;
+}
+
+.custom-btn-outline {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    padding-inline: 1rem;
+    text-transform: capitalize;
+}
