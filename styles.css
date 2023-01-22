@@ -32,7 +32,25 @@ a {
     text-decoration: none;
 }
 
+.topbar-link1 {
+    grid-area: topbarLink1;
+}
+
+.topbar-link2 {
+    grid-area: topbarLink2;
+}
+
+.topbar-link3 {
+    grid-area: topbarLink3;
+}
+
 .topbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        "topbarLink1 topbarLink2 topbarLink3";
     min-height: 50px;
     align-items: center;
 }
@@ -50,9 +68,17 @@ a {
     color: var(--text-secondary);
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 .hr {
     height: 0.08px;
     background-color: var(--text-secondary);
+}
+
+.header-menu {
+    display: flex;
 }
 
 nav ul {
@@ -132,14 +158,12 @@ main {
     padding: 10rem 0;
 }
 
-/* .banner-content h4 {
-    color: var(--text-secondary);
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.55rem;
-    text-transform: capitalize;
-} */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    min-height: 100vh;
+}
 
 .banner-content h1 {
     font-family: var(--secondary-font);
@@ -191,6 +215,12 @@ main {
 
 .custom-rounded-border {
     border-radius: 0.625rem 0;
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Grid -Box */
@@ -296,6 +326,23 @@ main {
 }
 
 /* Menu Section */
+
+.card-1 {
+    grid-area: card1;
+}
+
+.card-2 {
+    grid-area: card2;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: "card1 card2";
+}
+
 #menu-items {
     background-color: var(--bg-dark);
 }
@@ -420,4 +467,131 @@ main {
     border-radius: 25px 0;
     margin-top: -105px;
     background: rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        background-image: url(./assets/banner-bg.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .popular-items-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas:
+            "item1 item2"
+            "item3 .";
+    }
+
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission-box {
+        margin-top: 1rem;
+    }
+
+    .grid-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "mission-box mission-box mission-box"
+            "list-box list-box bbq-img-box"
+            "author-box author-box bbq-img-box";
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        grid-template-areas: "card1 card2";
+    }
+}
+
+/* ? Tablet  */
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+    }
+
+    .grid-box {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            ". mission-box mission-box ."
+            ". list-box list-box ."
+            ". bbq-img-box bbq-img-box ."
+            ". author-box author-box .";
+    }
+
+
+}
+
+@media screen and (max-width: 580px) {
+    .topbar {
+        text-align: center;
+        padding: 0.5rem 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "topbarLink1"
+            "topbarLink2"
+            "topbarLink3";
+    }
+
+    .banner {
+        padding: 0;
+        min-height: 50vh;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .grid-box {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mission-box"
+            "list-box"
+            "bbq-img-box"
+            "author-box ";
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2";
+    }
+
+    .popular-items-boxes {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3";
+    }
+
 }

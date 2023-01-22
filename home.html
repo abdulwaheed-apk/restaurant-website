@@ -9,36 +9,34 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <title>Restho - Resturent React Template</title>
+    <title>Restho | Resturent React Template</title>
 </head>
 <body>
     <header class="">
-        <div class="container d-flex justify-content-between align-content-center topbar">
-            <a href="#"> <i class="fa fa-clock"></i>Opening Hour: 9.00 am to 10.00 pm</a>
-            <a href="mailto:info@example.com"><i class="fa fa-envelope"></i> info@example.com</a>
-            <a href=""> <i class="fa fa-location-dot"></i>Road-01, Block-B, West London City</a>
+        <div class="container topbar">
+            <a href="#" class="topbar-link1"> <i class="fa fa-clock"></i>Opening Hour: 9.00 am to 10.00 pm</a>
+            <a href="mailto:info@example.com" class="topbar-link2"><i class="fa fa-envelope"></i> info@example.com</a>
+            <a href="" class="topbar-link3"> <i class="fa fa-location-dot"></i>Road-01, Block-B, West London City</a>
         </div>
         <div class="hr"></div>
 
-        <nav class="navbar container d-flex justify-content-between">
+        <nav class="navbar container d-flex justify-content-between position-relative">
             <a href="./home.html" class="navbar-brand"><img src="./assets/logo.svg" alt="Logo"></a>
-            <ul class="d-flex">
+            <ul class="header-menu">
                 <li><a href="./home.html" class="home-link">Home</i></a></li>
                 <li><a href="javascript:void(0)" id="about-link">About</a></li>
                 <li><a href="javascript:void(0)" id="popular-link">Popular Items</a></li>
                 <li> <a href="javascript:void(0)" id="menu-link">Menu</a> </li>
                 <li><a href="javascript:void(0)" id="contact-link">Contact</a></li>
             </ul>
-
-            <button class="btn btn-warning custom-btn">contact Now</button>
+            <div><a href="javascript:void(0)" class=""><i class="fa fa-bars hamburger-icon"></i></a></div>
+            <button class="contact-btn btn btn-warning custom-btn">contact Now</button>
         </nav>
 
     </header>
     <main>
-        <div class="d-flex justify-content-around py-5 min-vh-100">
-            <!-- <div class="banner-left-img my-auto">
-                <img src="./assets/banner-img-1.png" alt="Banner Img 1">
-            </div>` -->
+        <div class="banner">
+
             <div class="banner-content text-center mt-5">
                 <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
@@ -47,9 +45,6 @@
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                 <button class="btn btn-outline-warning px-5 py-2 custom-btn-outline">Discover More</button>
             </div>
-            <!-- <div class="banner-right-img">
-                <img src="./assets/banner-img-2.png" alt="">
-            </div> -->
         </div>
     </main>
     <!-- Popuar Items -->
@@ -127,11 +122,11 @@
         <div class="container">
             <div class="title-box ">
                 <h4 class="subtitle-heading"> <span><img src="./assets/sub-title-vec.svg"
-                            alt="subtitle img"></span>Introduction of Restho><span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span>Introduction of Restho<span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span></h4>
                 <h2>We Are Experienced Restaurant.</h2>
             </div>
-            <div class="about-box d-flex justify-content-between align-content-center py-5">
+            <div class="about-box py-5">
                 <div class="img-div me-4">
                     <img src="./assets/h1-intro-left-img.png" alt="About Chef" class="custom-rounded-border">
                 </div>
@@ -190,8 +185,8 @@
                 List<span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span></h4>
             <h2>Our Menu List</h2>
         </div>
-        <div class="d-md-flex justify-content-evenly py-5">
-            <div class="text-center menu-card">
+        <div class="container menu-grid py-5">
+            <div class="text-center menu-card card-1">
                 <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span></h4>
@@ -261,7 +256,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="text-center menu-card">
+            <div class="text-center menu-card card-2">
                 <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
                             alt="subtitle img"></span></h4>

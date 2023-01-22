@@ -2,6 +2,10 @@ let aboutLink = document.getElementById("about-link")
 let popularLink = document.getElementById("popular-link")
 let menuLink = document.getElementById("menu-link")
 let contactLink = document.getElementById("contact-link")
+let hamIcon = document.getElementsByClassName("hamburger-icon")
+let toTopBtn = document.getElementsByClassName("fa-arrow-up")
+
+let headerMenu =document.getElementsByClassName("header-menu")
 
 let about = document.getElementById("about-section")
 let popular = document.getElementById("popular-items")
@@ -22,6 +26,11 @@ menuLink.addEventListener("click", function() {
 contactLink.addEventListener("click", function() {
     contact.scrollIntoView(true)
 })
-
-
+hamIcon.addEventListener("click", function()  {
+    headerMenu.style.display = "inline-block";
+    
+})
+toTopBtn.addEventListener("click", () => {
+    scrollToTop(true);
+})
 
