@@ -23,20 +23,11 @@
         <nav class="navbar container d-flex justify-content-between">
             <a href="./home.html" class="navbar-brand"><img src="./assets/logo.svg" alt="Logo"></a>
             <ul class="d-flex">
-                <li class="home-link"><a href="#">Home <i class="fa fa-chevron-down"></i>
-                        <ul class="submenu">
-                            <li><a href="">Home 1</a></li>
-                            <li><a href="">Home 2</a></li>
-                            <li><a href="">Home 3</a></li>
-                        </ul>
-                    </a>
-
-
-                </li>
-                <li> <a href="#" target="_blank">Menu</a> </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./home.html" class="home-link">Home</i></a></li>
+                <li><a href="javascript:void(0)" id="about-link">About</a></li>
+                <li><a href="javascript:void(0)" id="popular-link">Popular Items</a></li>
+                <li> <a href="javascript:void(0)" id="menu-link">Menu</a> </li>
+                <li><a href="javascript:void(0)" id="contact-link">Contact</a></li>
             </ul>
 
             <button class="btn btn-warning custom-btn">contact Now</button>
@@ -49,8 +40,9 @@
                 <img src="./assets/banner-img-1.png" alt="Banner Img 1">
             </div>` -->
             <div class="banner-content text-center mt-5">
-                <h4><span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span>Welcome to Restho<span><img
-                            src="./assets/sub-title-vec.svg" alt="subtitle img"></span></h4>
+                <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span></h4>
                 <h1>Find Your Best Healthy & Tasty Food.</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                 <button class="btn btn-outline-warning px-5 py-2 custom-btn-outline">Discover More</button>
@@ -60,36 +52,296 @@
             </div> -->
         </div>
     </main>
-    <section>
+    <!-- Popuar Items -->
+    <section class="text-white" id="popular-items">
         <div class="container py-5 text-center">
-            <h4><span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span>Our New Item<span><img
-                        src="./assets/sub-title-vec.svg" alt="subtitle img"></span></h4>
-            <h2>Restho New Item List</h2>
-            <div class="d-flex justify-content-around py-5">
-                <div class="border border-white">
-                    <span>Spcial Offer</span>
-                    <h3><a href="#">Our New Item has offer</a></h3>
-                    <button>After Discount
-                        <span>20%</span></button>
+            <div class="section-title">
+                <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span> Our
+                    Popular Item <span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span></h4>
+                <h2>Restho Popular Item List</h2>
+
+            </div>
+            <div class=" popular-items-boxes py-5">
+
+                <div class="item1 item-single">
+                    <div class="img-box">
+                        <img src="./assets/populer2.png" alt="Beaf Biryani">
+                        <span>$30</span>
+                    </div>
+                    <div class="item-content text-center">
+                        <div class="review-area">
+                            <span>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                Reviews (10)
+                            </span>
+                            <h4>Beaf Biriyani</h4>
+                            <p>It is a long established fact that a reader will be distracted.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="border d-flex flex-column p-3">
-                    <img src="./assets/new-items4.png" alt="Chicken Kebab" class="rounded-pill">
-                    <span>Price - $8</span>
-                    <h3><a href="#">Chicken Kebab</a></h3>
+                <div class="item2 item-single">
+                    <div class="img-box">
+                        <img src="./assets/populer2.png" alt="Beaf Biryani">
+                        <span>$30</span>
+                    </div>
+                    <div class="item-content text-center">
+                        <div class="review-area">
+                            <span>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                Reviews (10)
+                            </span>
+                            <h4>Beaf Biriyani</h4>
+                            <p>It is a long established fact that a reader will be distracted.</p>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    style="background-image: url('./assets/reserve1.png'); background-size: cover; background-repeat: no-repeat;">
-                    <span><img src="./assets/sub-title-vec.svg" alt="subtitle img">Reserve<img
-                            src="./assets/sub-title-vec.svg" alt="subtitle img"></span>
-                    <h3><a href="#">For Your Private Event</a></h3>
-                    <button>Book Table</button>
+                <div class="item3 item-single">
+                    <div class="img-box">
+                        <img src="./assets/populer2.png" alt="Beaf Biryani">
+                        <span>$30</span>
+                    </div>
+                    <div class="item-content text-center">
+                        <div class="review-area">
+                            <span>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                    class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                Reviews (10)
+                            </span>
+                            <h4>Beaf Biriyani</h4>
+                            <p>It is a long established fact that a reader will be distracted.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+                <div> </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about-section" class="bg-white text-dark container-fluid">
+        <div class="container">
+            <div class="title-box ">
+                <h4 class="subtitle-heading"> <span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span>Introduction of Restho><span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span></h4>
+                <h2>We Are Experienced Restaurant.</h2>
+            </div>
+            <div class="about-box d-flex justify-content-between align-content-center py-5">
+                <div class="img-div me-4">
+                    <img src="./assets/h1-intro-left-img.png" alt="About Chef" class="custom-rounded-border">
+                </div>
+                <div class="ms-3">
+                    <div class="mission-box ">
+                        <div class="mission-icon-box">
+                            <img src="./assets/mission.svg" alt="Our Mission">
+                            <h4 class="">Our Mission</h4>
+                        </div>
+
+                        <p class="">It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem
+                            Ipsum passages, and more recently
+                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="grid-box">
+                        <div class="list-box">
+                            <ul>
+                                <li> <i class="fa-regular fa-check-circle"></i> Delicious Food.</li>
+                                <li> <i class="fa-regular fa-check-circle"></i> Cost Effective.</li>
+                                <li> <i class="fa-regular fa-check-circle"></i> Clean Environment</li>
+                            </ul>
+                            <ul>
+                                <li> <i class="fa-regular fa-check-circle"></i> Expert Chef.</li>
+                                <li> <i class="fa-regular fa-check-circle"></i> Letraset Sheets.</li>
+                                <li> <i class="fa-regular fa-check-circle"></i> Quality Food.</li>
+                            </ul>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-quote">
+                                <p> “Welcome our restaurant! Our Restaurant is the best as like delicious food,
+                                    nutrition
+                                    food
+                                    etc in world-wide.”</p>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center px-5 py-3">
+                                <img src="./assets/h1-intro-author.png" class="rounded-pill" alt="Author image">
+                                <div>
+                                    <h4>Mr. Hamilton</h4>
+                                    <p>CEO & Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bbq-img-box">
+                            <img src="./assets/h1-intro-right-img.png" class="custom-rounded-border" alt="BBQ Img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" text-white" id="menu-items">
+        <div class="menu-header container text-center py-5">
+            <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span>Menu
+                List<span><img src="./assets/sub-title-vec.svg" alt="subtitle img"></span></h4>
+            <h2>Our Menu List</h2>
+        </div>
+        <div class="d-md-flex justify-content-evenly py-5">
+            <div class="text-center menu-card">
+                <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span></h4>
+                <h2>Indian Menu</h2>
+                <div class="menu-list">
+                    <ul>
+                        <li>
+                            <div class="serial-number">
+                                <span>01.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Paneer Butter</h4>
+                                    <span class="price">$10</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>02.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Biriyani</h4>
+                                    <span class="price">$5</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>03.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Fried Rice</h4>
+                                    <span class="price">$4</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>04.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Beaf Biryani</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>05.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Mutton Pulao</h4>
+                                    <span class="price">$25</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center menu-card">
+                <h4 class="subtitle-heading"><span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span>Welcome to Restho<span><img src="./assets/sub-title-vec.svg"
+                            alt="subtitle img"></span></h4>
+                <h2>Indian Menu</h2>
+                <div class="menu-list">
+                    <ul>
+                        <li>
+                            <div class="serial-number">
+                                <span>01.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Salt Beef</h4>
+                                    <span class="price">$15</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>02.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Grey Butter</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>03.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Italian Sambar</h4>
+                                    <span class="price">$18</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>04.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Barley Soup</h4>
+                                    <span class="price">$10</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="serial-number">
+                                <span>05.</span>
+                            </div>
+                            <div class="menu-content w-100">
+                                <div class="menu-title d-flex justify-content-between align-items-center">
+                                    <h4>Italian Rasam</h4>
+                                    <span class="price">$8</span>
+                                </div>
+                                <p>To much delicious food in our restaurant.Visit us & taste it early.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
 
+    <footer id="footer">
+        <div class=" container d-flex justify-content-end">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+    </footer>
 
+    <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
